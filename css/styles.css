@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.title {
+    background-color: red;
+    text-align: center;
+    font-size: 12vw;
+    color: white;
+    width: 60%;
+    height: 20%;
+}
+
+.sub-text {
+    background-color: blue;
+    height: 10%;
+    width: 70%;
+    color: white;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.game-div {
+    background-color: rgb(144, 144, 144);
+    width: 70%;
+    height: 70%;
+    display: flex;
+    position: relative;
+}
+
+#game-component {
+    position: absolute;
+}
+.bop-it {
+    background-color: rgb(73, 5, 98);
+    color: white;
+    text-align: center;
+    height: 30%;
+    aspect-ratio: 1/1;
+    margin-left: 25vw;
+    margin-top: 20vh;
+}
+
+.spin-it {
+    background-color: red;
+    height: 20%;
+    aspect-ratio: 1/1;
+    margin-left: 13vw;
+    margin-top: 35vh;
+}
+
+.flick-it {
+    background-color: rgb(50, 242, 29);
+    height: 20%;
+    aspect-ratio: 1/1;
+    margin-left: 13vw;
+    margin-top: 10vh;
+}
+
+.twist-it {
+    background-color: yellow;
+    height: 20%;
+    aspect-ratio: 1/1;
+    margin-left: 43vw;
+    margin-top: 10vh;
+}
+
+.pull-it {
+    background-color: rgb(5, 189, 128);
+    height: 20%;
+    aspect-ratio: 1/1;
+    margin-left: 43vw;
+    margin-top: 35vh;
+}
