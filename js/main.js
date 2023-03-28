@@ -3,6 +3,7 @@ const gameComponents = document.querySelectorAll('#game-component')
 const messageLbl = document.querySelector('.sub-text')
 const timerLbl = document.querySelector('.timer')
 const highScoreLbl = document.querySelector('.high-score')
+const playBtn = document.querySelector('.start-button')
 
 // global variables
 let playerChoice = ''
@@ -18,6 +19,11 @@ let timerID = null
 
 gameComponents.forEach(function(component) {
     component.addEventListener('click',componentClicked)
+})
+
+playBtn.addEventListener('click', function(event) {
+    console.log('button clicked')
+    restartGame()
 })
 
 function componentClicked(event) {
@@ -54,7 +60,6 @@ function subtractTime () {
     console.log(remainingTime)
     if (remainingTime === 0) {
         console.log('game over')
-        messageLbl.innerHTML = 'Game Over!'
         isGameOver = true
         clearInterval(timerID)
         checkHighScore()
@@ -73,5 +78,22 @@ function checkHighScore() {
     if (currentScore > highScore) {
         highScore = currentScore
         highScoreLbl.innerHTML = 'Highscore: ' + highScore
+        messageLbl.innerHTML = 'New Highscore!'
+    } else {
+        messageLbl.innerHTML = 'Game Over, Try again!'
     }
+}
+
+function restartGame() {
+    playerChoice = ''
+    answerInt = 0
+    currentAnswer = 'bop-it'
+    timerCountdown = 3000
+    isGameOver = false
+    startingTime = 5000
+    highScore = 0
+    currentScore = 0
+    remainingTime = 0
+    timerID = null
+    messageLbl.innerHTML = 'Bop it to begin!'
 }

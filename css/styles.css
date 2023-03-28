@@ -44,7 +44,7 @@ body {
 .game-div {
     background-color: rgb(144, 144, 144);
     width: 70%;
-    height: 70%;
+    height: 60%;
     display: flex;
     position: relative;
 }
@@ -58,38 +58,45 @@ body {
     text-align: center;
     height: 30%;
     aspect-ratio: 1/1;
-    margin-left: 25vw;
-    margin-top: 20vh;
+    margin-left: 35%;
+    margin-top: 25%;
 }
 
 .spin-it {
     background-color: red;
     height: 20%;
     aspect-ratio: 1/1;
-    margin-left: 13vw;
-    margin-top: 35vh;
+    margin-left: 20%;
+    margin-top: 50%;
 }
 
 .flick-it {
     background-color: rgb(50, 242, 29);
     height: 20%;
     aspect-ratio: 1/1;
-    margin-left: 13vw;
-    margin-top: 10vh;
+    margin-left: 20%;
+    margin-top: 10%;
 }
 
 .twist-it {
     background-color: yellow;
     height: 20%;
     aspect-ratio: 1/1;
-    margin-left: 43vw;
-    margin-top: 10vh;
+    margin-left: 60%;
+    margin-top: 10%;
 }
 
 .pull-it {
     background-color: rgb(5, 189, 128);
     height: 20%;
     aspect-ratio: 1/1;
-    margin-left: 43vw;
-    margin-top: 35vh;
+    margin-left: 60%;
+    margin-top: 50%;
+}
+
+.start-button {
+    background-color: green;
+    height: 10%;
+    width: 70%;
+    text-align: center;
 }
