@@ -25,6 +25,21 @@ body {
     text-align: center;
     font-size: 7vh;
 }
+.info-div {
+    height: 5%;
+    width: 70%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+.timer {
+    width: 50%;
+    text-align: center;
+}
+.high-score {
+    width: 50%;
+    text-align: center;
+}
 
 .game-div {
     background-color: rgb(144, 144, 144);
